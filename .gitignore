@@ -1,9 +1,10 @@
-# Ignore everything
+# Ignorar todo
 *
 
-# But not these files/folders:
+# Pero no esto:
 !.gitignore
 !*.html
 !*.css
 !*.js
 !assets/
+!assets/**
