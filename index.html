@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+  <div class="main-layout">
+    <header>
+      <p class="name">Fabián Macías Esparza</p>
+      <p class="title"
+        data-es="Ingeniero en Sistemas Computacionales"
+        data-en="B.S. in Computer Systems Engineering">
+        B.S. in Computer Systems Engineering
+      </p>
+      <p class="description" 
+        data-es="Ingeniero con una pasión por crear soluciones innovadoras y una sólida experiencia en tecnologías web." 
+        data-en="Engineer with a passion for creating innovative solutions and a strong background in web technologies.">
+        Engineer with a passion for creating innovative solutions and a strong background in web technologies.
+      </p>
+      <div class="icons">
+        <div class="social-icons">
+          <a href="https://github.com/FabianMaEs" target="_blank" aria-label="Perfil de GitHub de Fabián">
+            <i class="fab fa-github icon"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/fabian-macias-esparza-isc/" target="_blank" aria-label="Perfil de LinkedIn de Fabián">
+            <i class="fab fa-linkedin icon"></i>
+          </a>
+        </div>
+        <div class="configuration-icons">
+          <button class="translate-button" aria-label="Cambiar a español" onclick="switchLanguage('es')">
+            <i class="fa-solid fa-language"></i>
+          </button>
+          <button class="toggle-theme-button" aria-label="Cambiar tema" id="toggle-theme">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+        </div>
+      </div>
+      <nav>
+        <a href="#about" data-es="Acerca de mí" data-en="About">About</a>
+        <a href="#projects" data-es="Proyectos" data-en="Projects">Projects</a>
+        <a href="#technologies" data-es="Tecnologías" data-en="Technologies">Technologies</a>
+        <a href="#education" data-es="Educación" data-en="Education">Education</a>
+      </nav>
+    </header>
+
+    <div class="content">
+        <section id="about" class="about-section">
+        <h1 data-es="Acerca de mí" data-en="About">About</h1>
+        <div>
+          <p data-es="Graduado en Ingeniería en Sistemas Computacionales de la <strong>Universidad Autónoma de Aguascalientes</strong>, con una sólida base en desarrollo de software y resolución de problemas." 
+              data-en="Computer Systems Engineering graduate from <strong>Autonomous University of Aguascalientes</strong>, with a strong foundation in software development and problem-solving.">
+            Computer Systems Engineering graduate from <strong>Autonomous University of Aguascalientes</strong>, with a strong foundation in software development and problem-solving.
+          </p>
+          <p data-es="Ingeniero con experiencia en desarrollo web, diseño de bases de datos y ingeniería de software. Explorando continuamente nuevas tecnologías para construir soluciones eficientes y escalables." 
+            data-en="Engineer with experience in web development, database design, and software engineering. Continuously exploring new technologies to build efficient and scalable solutions.">
+            Experienced in web development, database design, and software engineering. Continuously exploring new technologies to build efficient and scalable solutions.
+          </p>
+        </div>
+      </section>
+      
+      <section id="projects" class="projects-section">
+        <h1 data-es="Proyectos" data-en="Projects">Projects</h1>
+        <div class="projects-list">
+          <article class="project">
+            <header>
+              <h2>Cihuatl Michin</h2>
+              <p class="project-date" 
+                data-es="Proyecto en curso (<time datetime='2024'>2024</time> – <time datetime='2025'>2025</time>)" 
+                data-en="Ongoing Project (<time datetime='2024'>2024</time> – <time datetime='2025'>2025</time>)">
+                Ongoing Project (<time datetime="2024">2024</time> – <time datetime="2025">2025</time>)
+              </p>
+            </header>
+            <section>
+              <div class="info-container">
+                <p data-es="Cihuatl Michin es una plataforma web desarrollada como parte de un proyecto de tesis de licenciatura en colaboración con estudiantes de la Universidad Autónoma de Aguascalientes."
+                  data-en="Cihuatl Michin is a web platform developed as part of an undergraduate thesis project in collaboration with students from the Autonomous University of Aguascalientes.">
+                  Cihuatl Michin is a web platform developed as part of an undergraduate thesis project in collaboration with students from the Autonomous University of Aguascalientes. 
+                </p>
+                <p data-es="Su objetivo es concientizar y proporcionar contenido educativo sobre la biodiversidad de las especies acuáticas en Aguascalientes y sus desafíos ambientales actuales."
+                  data-en="Its goal is to raise awareness and provide educational content about the biodiversity of aquatic species in Aguascalientes and their current environmental challenges.">
+                  Its goal is to raise awareness and provide educational content about the biodiversity of aquatic species in Aguascalientes and their current environmental challenges.
+                </p>
+              </div>
+              <div class="preview-container">
+                <img src="assets/preview-cihualt-michin.png" class="zoomable" alt="Cihuatl Michin website preview">
+                <a href="https://fabianmaes.github.io/cihuatl-michin/index" class="preview-link site" target="_blank" data-es="Ir al sitio <i class='fas fa-external-link-alt'></a>" data-en="Visit site <i class='fas fa-external-link-alt'></a>">Visit site <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="https://github.com/FabianMaEs/cihuatl-michin" class="preview-link repo" target="_blank" data-es="Ver código <i class='fas fa-external-link-alt'></a>" data-en="View code <i class='fas fa-external-link-alt'></a>">View code <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+            </section>
+            <footer>
+              <ul class="tech-tags">
+                <li class="tag frontend">Angular</li>
+                <li class="tag frontend">SCSS</li>
+                <li class="tag backend">Node.js</li>
+                <li class="tag backend">Express</li>
+                <li class="tag database">MongoDB</li>
+                <li class="tag hosting">Heroku</li>
+                <li class="tag hosting">GitHub Pages</li>
+              </ul>
+            </footer>
+          </article>
+          
+          <article class="project">
+            <header>
+              <h2 data-en="User Access Management System" 
+                data-es="Sistema de Gestión de Acceso de Usuarios">
+                User Access Management System
+              </h2>
+              <p class="project-date">
+                <time datetime="2024">2024</time>
+              </p>
+            </header>
+            <section>
+              <div class="info-container">
+                <p data-es="Este proyecto implementa un sistema de gestión de usuarios con control de acceso basado en roles para administradores, médicos y pacientes." 
+                  data-en="This project implements a user management system with role-based access control for administrators, doctors, and patients.">
+                  This project implements a user management system with role-based access control for administrators, doctors, and patients. </p>
+                <p data-es="Desarrollado utilizando Angular, Node.js como middleware y una base de datos SQL." 
+                  data-en="Developed using Angular, Node.js as middleware, and a SQL database.">
+                  Developed using Angular, Node.js as middleware, and a SQL database.
+                </p>
+              </div>
+              <div class="preview-container">
+                <img src="assets/preview-UAMS.png" class="zoomable" alt="User Access Management System website preview">
+                <a class="preview-link repo" href="https://github.com/AndrewBedoy/RedesProy/commit/d56733583679d4b98e4f77f55e2e6d9555f2b4f0" target="_blank" data-es="Ver código <i class='fas fa-external-link-alt'></a>" data-en="View code <i class='fas fa-external-link-alt'></a>">
+                  View code <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </section>
+            <footer>
+              <ul class="tech-tags">
+                <li class="tag frontend">Angular</li>
+                <li class="tag backend">Node.js</li>
+                <li class="tag database">SQL</li>
+              </ul>
+            </footer>
+          </article>
+          
+          <article class="project">
+            <header>
+              <h2 data-es="Rastreador GPS en Tiempo Real"
+                data-en="Real-Time GPS Tracker">
+                Real-Time GPS Tracker
+              </h2>
+              <p class="project-date">
+                <time datetime="2024">2024</time>
+              </p>
+            </header>
+            <section>
+              <div class="info-container">
+                <p data-es="Aplicación web para el seguimiento de ubicación en tiempo real utilizando un microcontrolador ESP32."
+                  data-en="Web application for real-time location tracking using an ESP32 microcontroller.">
+                  Web application for real-time location tracking using an ESP32 microcontroller.
+                </p>
+                <p data-es="El backend está desplegado en Heroku y se comunica con el frontend para mostrar los datos GPS en un mapa."
+                  data-en="The backend is deployed on Heroku and communicates with the frontend to display GPS data on a map.">
+                  The backend is deployed on Heroku and communicates with the frontend to display GPS data on a map.
+                </p>
+              </div>
+              <div class="preview-container">
+                <img src="assets/preview-gps-tracker.png" class="zoomable" alt="Real-Time GPS Tracker website preview">
+                <a class="preview-link repo" href="https://github.com/FabianMaEs/ruta-GPS" target="_blank" 
+                  data-es="Ver cliente <i class='fas fa-external-link-alt'></i>" 
+                  data-en="View client <i class='fas fa-external-link-alt'></i>">
+                  View client <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a class="preview-link repo" href="https://github.com/FabianMaEs/ruta-GPS-server" target="_blank" 
+                  data-es="Ver servidor <i class='fas fa-external-link-alt'></i>" 
+                  data-en="View server <i class='fas fa-external-link-alt'></i>">
+                  View server <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </section>
+            <footer>
+              <ul class="tech-tags">
+                <li class="tag frontend">HTML</li>
+                <li class="tag frontend">JavaScript</li>
+                <li class="tag backend">Node.js</li>
+                <li class="tag hosting">Heroku</li>
+              </ul>
+            </footer>
+          </article>
+          
+          <article class="project">
+            <header>
+              <h2 data-es="Plataforma de Tienda en Línea" 
+                data-en="Online Store Platform">
+                Online Store Platform
+              </h2>
+              <p class="project-date">
+                <time datetime="2023">2023</time>
+              </p>
+            </header>
+            <section>
+              <div class="info-preview">
+                <p data-es="Aplicación web de comercio electrónico con características como una base de datos relacional normalizada, gestión de cuentas de usuario, 
+                    funcionalidad de carrito de compras, acceso al panel de administración y un sistema de pago con listado de artículos y cálculo total."
+                  data-en="Custom e-commerce web application with features including a normalized relational database, user account management, 
+                    shopping cart functionality, admin panel access, and a checkout system with item listing and total calculation.">
+                  Custom e-commerce web application with features including a normalized relational database, user account management, 
+                  shopping cart functionality, admin panel access, and a checkout system with item listing and total calculation.
+                </p>
+              </div>
+              <div class="preview-container">
+                <a class="preview-link repo" href="https://github.com/CDanielLira/Suaavecito/tree/Pago-y-descuentos" target="_blank" data-es="Ver código <i class='fas fa-external-link-alt'></i>" data-en="View code <i class='fas fa-external-link-alt'></i>">View code <i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </section>
+            <footer>
+                <ul class="tech-tags">
+                  <li class="tag frontend">HTML</li>
+                  <li class="tag frontend">CSS</li>
+                  <li class="tag frontend">JavaScript</li>
+                  <li class="tag backend">PHP</li>
+                  <li class="tag database">SQL</li>
+                </ul>
+            </footer>
+          </article>
+
+        </div>  
+      </section>
+
+      <section id="technologies" class="technologies-section">
+        <h1 data-es="Tecnologías" data-en="Technologies">Technologies</h1>
+        <p data-es="Experiencia en diversos proyectos utilizando distintos frameworks y lenguajes de programación, con un enfoque principal en desarrollo web y exploración adicional mediante proyectos personales." data-en="Experience includes various projects using different frameworks and programming languages, with a primary focus on web development and additional exploration through personal initiatives.">Experience includes various projects using different frameworks and programming languages, with a primary focus on web development and additional exploration through personal initiatives.</p>
+        <p data-es="Estas tecnologías incluyen:" data-en="Technologies used include:">Technologies used include:</p>
+        
+        <ul class="tech-list">
+          <li class="frontend">HTML</li>
+          <li class="frontend">CSS</li>
+          <li class="frontend">SCSS</li>
+          <li class="frontend">JavaScript</li>
+          <li class="frontend">TypeScript</li>
+          <li class="frontend">Angular</li>
+          <li class="frontend">Bootstrap</li>
+          <li class="backend">Node.js</li>
+          <li class="backend">Express</li>
+          <li class="backend">SQL</li>
+          <li class="backend">MongoDB</li>
+          <li class="backend">PHP</li>
+          <li class="tool">Git</li>
+          <li class="tool">GitHub</li>
+          <li class="tool">Heroku</li>
+          <li class="general">Java</li>
+          <li class="general">C++</li>
+          <li class="general">Python</li>
+          <li class="general">C</li>
+        </ul>
+      </section>
+
+      <section id="education" class="education-section">
+        <h1 data-es="Educación" data-en="Education">Education</h1>
+        <div class="list-education">
+          <article class="education-item">
+          <header>
+            <h2 data-es="Universidad Autónoma de Aguascalientes" 
+              data-en="Autonomous University of Aguascalientes">
+              Autonomous University of Aguascalientes
+            </h2>
+            <p data-es="Licenciatura en Ingeniería en Sistemas Computacionales." 
+              data-en="Bachelor's Degree in Computer Systems Engineering.">
+              Bachelor's Degree in Computer Systems Engineering.
+            </p>
+          </header>
+          <section>
+            <p data-es="Cursos relevantes: Desarrollo Web, Gestión de Bases de Datos, Ingeniería de Software, Estructuras de Datos, Algoritmos." 
+              data-en="Relevant Coursework: Web Development, Database Management, Software Engineering, Data Structures, Algorithms.">
+              Relevant Coursework: Web Development, Database Management, Software Engineering, Data Structures, Algorithms.
+            </p>
+            <p data-es="Tesina: <strong>Cihuatl Michin</strong> - Un proyecto enfocado en la conservación de las especies acuáticas en Aguascalientes."
+              data-en="Undergraduate Thesis: <strong>Cihuatl Michin</strong> - A project focused on the conservation of aquatic species in Aguascalientes.">
+              Undergraduate Thesis: <strong>Cihuatl Michin</strong> - A project focused on the conservation of aquatic species in Aguascalientes.
+            </p>
+          </section>
+          <footer>
+            <time datetime="2025">2025</time>
+          </footer>
+        </article>
+      
+        <article class="education-item">
+          <header>
+            <h2>CECyTEA Morelos</h2>
+            <p data-es="Diploma de Bachillerato en Programación." 
+              data-en="High School Diploma in Programming.">
+              High School Diploma in Programming.
+            </p>
+          </header>
+          <section>
+            <p data-es="Cursos relevantes: Desarrollo de Aplicaciones Móviles, Sitio Web de Comercio Electrónico, Diseño Web, Diseño de Bases de Datos, Programación General." 
+              data-en="Relevant Coursework: Mobile App Development, E-commerce Website, Web Design, Database Design, General Programming.">
+              Relevant Coursework: Mobile App Development, E-commerce Website, Web Design, Database Design, General Programming.
+            </p>
+          </section>
+          <footer>
+            <time datetime="2020">2020</time>
+          </footer>
+        </article>
+        </div>
+      </section>
+    
+      <section id="education" class="certificates-section">  
+        <h1 data-es="Certificados" data-en="Certificates">Certificates</h1>
+          <div class="list-certificates">
+            <article class="education-item">
+              <h2 data-es="JavaScript Avanzado" data-en="Advanced JavaScript">Advanced JavaScript</h2>
+              <p data-es="Certificado de Scrimba" data-en="Certificate from Scrimba">Certificate from Scrimba</p>
+              <img src="assets/advanced-javascript.png" class="zoomable" alt="Advanced JavaScript Certificate" class="certificate-image">
+              <p><a href="https://scrimba.com/certificate-cert2ffentAFMaKctCBdyBEnhZzt9yQnaYKAkWUuimAudsAdML" target="_blank" rel="noopener noreferrer" data-es="Ver certificado en scrimba.com <i class='fas fa-external-link-alt'></a>" data-en="View certificate at scrimba.com <i class='fas fa-external-link-alt'></a>">
+                View certificate at scrimba.com <i class="fas fa-external-link-alt"></i>
+              </a></p>
+              <time datetime="2025-04" data-es="Abr. 2025" data-en="Apr. 2025">Apr. 2025</time>
+            </article>
+        
+            <article class="education-item">
+              <h2 
+                data-es="Introducción a MongoDB" 
+                data-en="Introduction to MongoDB">
+                Introduction to MongoDB
+              </h2>
+              <p
+                data-es="Certificado de MongoDB University"
+                data-en="Certificate from MongoDB University">
+                Certificate from MongoDB University
+              </p>
+              <img src="assets/introduction-mongodb.png" class="zoomable" alt="MongoDB Certificate" class="certificate-image">
+              <p>
+                <a href="https://learn.mongodb.com/c/rFp7-UL3SuWJR52xFIJUPw" target="_blank" rel="noopener noreferrer" 
+                  data-es="Ver certificado en learn.mongodb.com <i class='fas fa-external-link-alt'></i>" 
+                  data-en="View certificate at learn.mongodb.com <i class='fas fa-external-link-alt'></i>">
+                  View certificate at learn.mongodb.com <i class="fas fa-external-link-alt"></i>
+                </a>
+              </p>
+              <time datetime="2025-02">Feb. 2025</time>
+            </article>
+
+            <article class="education-item">
+              <h2 
+                data-es="Ruta de Desarrollador de MongoDB Node.js" 
+                data-en="MongoDB Node.js Developer Path">
+                MongoDB Node.js Developer Path
+              </h2>
+              <p 
+                data-es="Certificado de MongoDB University"
+                data-en="Certificate from MongoDB University">
+                Certificate from MongoDB University
+              </p>
+              <img src="assets/nodejs-mongo.png" class="zoomable" alt="MongoDB Node.js Certificate" class="certificate-image">
+              <p>
+                <a href="https://learn.mongodb.com/c/GGvbfV3PQ2-YkK5of5zofw" target="_blank" rel="noopener noreferrer" 
+                  data-es="Ver certificado en learn.mongodb.com <i class='fas fa-external-link-alt'></i>" 
+                  data-en="View certificate at learn.mongodb.com <i class='fas fa-external-link-alt'></i>">
+                  View certificate at learn.mongodb.com <i class="fas fa-external-link-alt"></i>
+                </a>
+              </p>
+              <time datetime="2025-02">Feb. 2025</time>
+            </article>
+          </div>
+      </section>
+    </div>
+  </div>
+
+  <footer>
+    <p data-es="Inspirado por el <a href='https://brittanychiang.com/' target='_blank'> portafolio de Brittany Chiang</a>"
+      data-en="Inspired by <a href='https://brittanychiang.com/' target='_blank'>Brittany Chiang's Portfolio</a>">
+      Inspired by <a href="https://brittanychiang.com/" target="_blank">Brittany Chiang's Portfolio</a></p>
+    <p data-es="Gracias a <a href='https://youtu.be/iDVYi0zZty4?si=1bw8m6kmWSUhy1PD&t=258' target='_blank'>midudev</a> por los tutoriales y la inspiración."
+      data-en="Thanks to <a href='https://youtu.be/iDVYi0zZty4?si=1bw8m6kmWSUhy1PD&t=258' target='_blank'>midudev</a> for the tutorials and inspiration.">
+      Thanks to <a href="https://youtu.be/iDVYi0zZty4?si=1bw8m6kmWSUhy1PD&t=258" target="_blank">midudev</a> for the tutorials and inspiration.</p>
+  </footer>
+
+<script src="index.js"></script>
+</body>
+</html>
