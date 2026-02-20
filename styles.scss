@@ -347,10 +347,11 @@ body>.main-layout>.content>section {
   z-index: 5;
   border-radius: 12px;
   padding: 2rem;
-  margin: 0.3rem;
+  margin: 2rem 0;
   transition: box-shadow 0.15s ease-in-out;
   background-color: var(--bg-darken);
   border-radius: 12px 12px 12px 0;
+
 
   &:hover {
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.146);
@@ -532,7 +533,7 @@ body>.main-layout>.content>section {
   .education-item {
     padding: 1.5rem;
     border-radius: 12px;
-    margin: 0.3rem;
+    margin: 2rem 0;
     transition: all 0.2s ease-in-out;
 
     border-radius: 12px 12px 12px 0;
@@ -541,6 +542,10 @@ body>.main-layout>.content>section {
 
     &:hover {
       transform: translateX(5px);
+    }
+
+    &:last-child {
+      margin-bottom: 2rem;
     }
 
     a {
@@ -675,17 +680,10 @@ body>footer {
 
   body {
     max-width: 1300px;
-    // footer {
-    //    margin: 2rem 0 0;
-    //     padding: 0;
-    //     background-color: var(--bg-darken);
-    //     border-radius: 12px 12px 0 0;
-    // }
   }
 
   body>.main-layout>header {
     width: 40%;
-    // border-radius: 0 0 12px 12px;
   }
 
   body>.main-layout>.content {
@@ -713,18 +711,34 @@ body>footer {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 1rem;
+
+      .project {
+        margin: 0.3rem;
+      }
     }
 
     .education-section .list-education {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 1rem;
+
+      .education-item {
+        margin: 0.3rem;
+      }
     }
 
     .certificates-section .list-certificates {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 1rem;
+
+      .education-item {
+        margin: 0.3rem;
+
+        &:last-child {
+          margin-bottom: 2rem;
+        }
+      }
     }
   }
 }

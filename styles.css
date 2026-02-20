@@ -302,7 +302,7 @@ body > .main-layout > .content > section {
   z-index: 5;
   border-radius: 12px;
   padding: 2rem;
-  margin: 0.3rem;
+  margin: 2rem 0;
   transition: box-shadow 0.15s ease-in-out;
   background-color: var(--bg-darken);
   border-radius: 12px 12px 12px 0;
@@ -458,7 +458,7 @@ body > .main-layout > .content > section {
 .certificates-section .education-item {
   padding: 1.5rem;
   border-radius: 12px;
-  margin: 0.3rem;
+  margin: 2rem 0;
   transition: all 0.2s ease-in-out;
   border-radius: 12px 12px 12px 0;
   background-color: var(--bg-darken);
@@ -466,6 +466,10 @@ body > .main-layout > .content > section {
 .education-section .education-item:hover,
 .certificates-section .education-item:hover {
   transform: translateX(5px);
+}
+.education-section .education-item:last-child,
+.certificates-section .education-item:last-child {
+  margin-bottom: 2rem;
 }
 .education-section .education-item a,
 .certificates-section .education-item a {
@@ -599,15 +603,27 @@ body > footer p a:hover {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
+  body > .main-layout > .content .projects-section .projects-list .project {
+    margin: 0.3rem;
+  }
   body > .main-layout > .content .education-section .list-education {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
+  body > .main-layout > .content .education-section .list-education .education-item {
+    margin: 0.3rem;
+  }
   body > .main-layout > .content .certificates-section .list-certificates {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+  }
+  body > .main-layout > .content .certificates-section .list-certificates .education-item {
+    margin: 0.3rem;
+  }
+  body > .main-layout > .content .certificates-section .list-certificates .education-item:last-child {
+    margin-bottom: 2rem;
   }
 }
 
