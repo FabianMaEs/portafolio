@@ -63,7 +63,8 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   color: var(--text-primary);
@@ -98,6 +99,7 @@ html, body {
   transform: scale(1);
   max-width: 90vw;
   max-height: 90vh;
+  width: auto;
 }
 
 @keyframes imageFadeIn {
@@ -147,10 +149,14 @@ body > .main-layout > header .icons {
   width: 100%;
   padding: 0 2rem 2rem;
 }
-body > .main-layout > header .icons .social-icons, body > .main-layout > header .icons .configuration-icons {
+body > .main-layout > header .icons .social-icons,
+body > .main-layout > header .icons .configuration-icons {
   gap: 1rem;
 }
-body > .main-layout > header .icons .social-icons a, body > .main-layout > header .icons .social-icons button, body > .main-layout > header .icons .configuration-icons a, body > .main-layout > header .icons .configuration-icons button {
+body > .main-layout > header .icons .social-icons a,
+body > .main-layout > header .icons .social-icons button,
+body > .main-layout > header .icons .configuration-icons a,
+body > .main-layout > header .icons .configuration-icons button {
   background: none;
   border: none;
   cursor: pointer;
@@ -164,7 +170,10 @@ body > .main-layout > header .icons .social-icons a, body > .main-layout > heade
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
-body > .main-layout > header .icons .social-icons a i, body > .main-layout > header .icons .social-icons button i, body > .main-layout > header .icons .configuration-icons a i, body > .main-layout > header .icons .configuration-icons button i {
+body > .main-layout > header .icons .social-icons a i,
+body > .main-layout > header .icons .social-icons button i,
+body > .main-layout > header .icons .configuration-icons a i,
+body > .main-layout > header .icons .configuration-icons button i {
   font-size: 2rem;
   height: 2rem;
   width: 2rem;
@@ -253,7 +262,8 @@ h1 {
   top: 0;
   width: 100%;
   backdrop-filter: blur(15px);
-  background-color: rgba(var(--bg-dark), 0.8); /* Fondo semi-transparente */
+  background-color: rgba(var(--bg-dark), 0.8);
+  /* Fondo semi-transparente */
   z-index: 10;
   height: 60px;
   text-transform: uppercase;
@@ -292,8 +302,8 @@ body > .main-layout > .content > section {
   z-index: 5;
   border-radius: 12px;
   padding: 2rem;
-  margin: 2rem 0;
-  transition: all 0.15s ease-in-out;
+  margin: 0.3rem;
+  transition: box-shadow 0.15s ease-in-out;
   background-color: var(--bg-darken);
   border-radius: 12px 12px 12px 0;
 }
@@ -325,21 +335,21 @@ body > .main-layout > .content > section {
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  transition: all 0.2s ease;
+  transition: box-shadow 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
 }
 .project section .preview-container .preview-link.repo {
   color: #e0e6f7;
   background-color: #772EFF;
 }
 .project section .preview-container .preview-link.repo:hover {
-  background-color: rgb(87.3205741627, 0, 250);
+  background-color: color-mix(in srgb, #772EFF 90%, rgb(0, 0, 0) 10%);
 }
 .project section .preview-container .preview-link.site {
   color: #e0e6f7;
   background-color: #076D9C;
 }
 .project section .preview-container .preview-link.site:hover {
-  background-color: rgb(4.8098159509, 74.8957055215, 107.1901840491);
+  background-color: color-mix(in srgb, #076D9C 90%, rgb(0, 0, 0) 10%);
 }
 .project section .preview-container .preview-link:hover {
   transform: translateY(-3px);
@@ -387,6 +397,14 @@ body > .main-layout > .content > section {
   background-color: #7E57C2;
 }
 
+.tag.tool {
+  background-color: #8b5cf6;
+}
+
+.tag.general {
+  background-color: #057f7f;
+}
+
 .tag:hover {
   filter: brightness(1.1);
   cursor: default;
@@ -401,6 +419,22 @@ body > .main-layout > .content > section {
   padding: 0;
   margin: 2rem 0;
 }
+.technologies-section .tech-list .frontend {
+  background-color: #1A6EF4;
+  --hover-bg-color: color-mix(in srgb, $color-frontend 90%, rgb(0, 0, 0) 10%);
+}
+.technologies-section .tech-list .backend {
+  background-color: #B85C00;
+  --hover-bg-color: color-mix(in srgb, $color-backend 90%, rgb(0, 0, 0) 10%);
+}
+.technologies-section .tech-list .tool {
+  background-color: #8b5cf6;
+  --hover-bg-color: color-mix(in srgb, $color-tool 90%, rgb(0, 0, 0) 10%);
+}
+.technologies-section .tech-list .general {
+  background-color: #057f7f;
+  --hover-bg-color: color-mix(in srgb, $color-general 90%, rgb(0, 0, 0) 10%);
+}
 .technologies-section .tech-list li {
   padding: 0.4rem 0.8rem;
   border-radius: 9999px;
@@ -408,42 +442,40 @@ body > .main-layout > .content > section {
   font-weight: 500;
   color: #fff;
   font-family: "Consolas", monospace;
+  cursor: default;
 }
-.technologies-section .tech-list .frontend {
-  background-color: #3b82f6;
-}
-.technologies-section .tech-list .backend {
-  background-color: #10b981;
-}
-.technologies-section .tech-list .tool {
-  background-color: #8b5cf6;
-}
-.technologies-section .tech-list .general {
-  background-color: #f59e0b;
+.technologies-section .tech-list li:hover {
+  filter: brightness(1.1);
+  cursor: default;
 }
 
-.education-section h1, .certificates-section h1 {
+.education-section h1,
+.certificates-section h1 {
   text-align: center;
   height: auto;
 }
-.education-section .education-item, .certificates-section .education-item {
+.education-section .education-item,
+.certificates-section .education-item {
   padding: 1.5rem;
   border-radius: 12px;
-  margin: 2rem 0;
+  margin: 0.3rem;
   transition: all 0.2s ease-in-out;
   border-radius: 12px 12px 12px 0;
   background-color: var(--bg-darken);
 }
-.education-section .education-item:hover, .certificates-section .education-item:hover {
+.education-section .education-item:hover,
+.certificates-section .education-item:hover {
   transform: translateX(5px);
 }
-.education-section .education-item a, .certificates-section .education-item a {
+.education-section .education-item a,
+.certificates-section .education-item a {
   color: var(--accent-darken);
   text-decoration: none;
   font-weight: bold;
   transition: all 0.2s ease-in-out;
 }
-.education-section .education-item a:hover, .certificates-section .education-item a:hover {
+.education-section .education-item a:hover,
+.certificates-section .education-item a:hover {
   color: var(--accent-lighten);
 }
 
@@ -476,7 +508,7 @@ body > footer p a {
   transition: all 0.2s ease-in-out;
 }
 body > footer p a:hover {
-  color: rgb(9.1901840491, 143.1042944785, 204.8098159509);
+  color: color-mix(in srgb, #076D9C 90%, white 10%);
   transform: translateY(-3px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
